@@ -1,0 +1,11 @@
+1. create account
+2. assign username
+3. assign pin
+    -4 digit pin
+4. deposit min rupees
+    -min 100/-
+5. functions:
+    -balance
+    -deposite
+    -withdraw
+    -exit
