@@ -81,9 +81,10 @@ class App():
     )
     self.login_acc = tk.Button(
       self.home,
-      text="Login Account",
+      text="View Balance",
       font=('Lucida Bright', 20),
-      width=20
+      width=20,
+      command=self.view_balance
     )
 
     self.deposite_amount.grid(
@@ -248,6 +249,19 @@ class App():
     upload_file = pd.DataFrame(data_frame)
     upload_file.to_csv('user_data.csv', mode='a', index=False, header=False)
     return True
+  
+  def view_balance(self):
+    for i in self.master.winfo_children():
+      i.destroy()
+    self.viewBalance = tk.Frame(
+      bg="lightblue"
+    )
+    self.viewBalance.pack()
+    print("view balance")
+
+    self.account_details = {
+      ''
+    }
 
 window.title("Bank MAnagement System")
 window.geometry("1100x700")
