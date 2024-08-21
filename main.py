@@ -15,7 +15,7 @@ class App():
     self.master = master
     self.master.geometry("1100x700")
     self.welcome_page()
-    # ------------------------ WELCOME FRAME ------------------------
+# ------------------------ WELCOME FRAME ------------------------
   def welcome_page(self):
     for i in self.master.winfo_children():
       i.destroy()
